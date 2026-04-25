@@ -1,0 +1,357 @@
+# AEGIS — Final Complete Project Overview
+# Autonomous Equity Guardian & Intelligence System
+
+---
+
+## WHAT IS AEGIS?
+
+AEGIS is a free web application that connects to your existing Demat account and becomes the only financial platform you will ever need. It reads your real portfolio, monitors markets 24/7, sends intelligent alerts before news hits mainstream media, explains every market event in plain English or Hindi, and when your portfolio takes a hit — tells you exactly why it happened and gives you a mathematically calculated plan to recover.
+
+AEGIS never places a trade on your behalf. It never touches your money. Every decision stays entirely with you. AEGIS just makes sure that every decision you make is the most informed one you have ever made.
+
+---
+
+## THE PROBLEM AEGIS SOLVES
+
+India has 170 million Demat account holders today. Most of them are losing money — not because they pick bad stocks, but because they have no system around their decisions.
+
+Here is what a typical retail investor's day looks like right now:
+
+Opens Zerodha        → Check portfolio
+Opens Moneycontrol   → Read news
+Opens Screener.in    → Research a stock
+Checks Twitter       → Get tips
+Googles a term       → Understand something
+Opens NSE website    → Check FII data
+Opens Excel          → Calculate real profit
+Opens another app    → Track SIPs
+Reads WhatsApp group → Gets unverified tips
+
+Nine different places. Zero connection between them. Zero personalization. And still — no answer to the most important question: "Is my money safe right now, and if not, what do I do?"
+
+The result is predictable. Market drops. Investor panics. Sells everything. Market recovers. Investor missed it. Studies in behavioral finance show this pattern costs retail investors 1.5–3% annually — not bad markets, just bad decisions made without a system.
+
+AEGIS replaces all nine of those places with one. And gives them the system they never had.
+
+---
+
+## HOW IT WORKS
+
+Step 1 → Open AEGIS in any browser
+Step 2 → Login with email or Google
+Step 3 → Connect your Zerodha or Upstox account (read-only, one time, 2 minutes)
+Step 4 → Your real portfolio appears automatically
+Step 5 → AEGIS starts working immediately — monitoring, analysing, alerting
+Step 6 → Use it every day like you check your bank app
+
+AEGIS reads your real holdings, your real buying prices, your real profit and loss — and everything it shows you is built around your specific financial situation. Not generic advice for a generic investor. Advice for you, specifically.
+
+---
+
+## ALL 17 MODULES
+
+### PORTFOLIO INTELLIGENCE
+
+MODULE 1 — PORTFOLIO HEALTH MONITOR
+The moment you open AEGIS you see one number — your Portfolio Health Score from 0 to 100. Green means your money is working normally. Yellow means there is turbulence worth watching. Red means something significant happened and action may be needed. This score is calculated every 60 seconds using your Sharpe Ratio, sector concentration, CVaR distance, and current sentiment around your held stocks. The complexity runs invisibly. The user sees one clean number and one clear color.
+
+MODULE 2 — ADVISORY ENGINE
+AEGIS analyses every stock you own and generates a signal — Buy more, Hold, Watch carefully, or Review your position. Every signal comes with a plain English reason and the specific factors that drove it — price forecast, news sentiment, institutional activity, technical indicators, and your current portfolio balance. AEGIS never says "you must sell." It says "here are three reasons some investors are reducing exposure — and here is the counter-argument for holding." The final decision is always yours.
+
+MODULE 3 — RECOVERY ADVISOR
+This is the feature that defines AEGIS. No other retail platform has it. When your portfolio suffers a statistically significant loss — calculated using CVaR, not an arbitrary percentage — the Recovery Engine activates automatically. It identifies which exact market factor caused the loss using SHAP analysis. It then runs 500 simulated recovery scenarios based on 20 years of similar historical events using Monte Carlo simulation. It collapses all 500 simulations into three human-readable recovery paths:
+
+Conservative — slowest, safest, lowest risk, longest timeline
+Balanced — optimal risk-adjusted recovery, recommended in most cases
+Aggressive — fastest recovery, higher risk, requires available capital
+
+Each path shows specific actions, estimated recovery timeline, and the historical data behind the estimate. The user picks a lane. AEGIS explains it in plain English. They execute it themselves through their broker.
+
+MODULE 4 — EMOTIONAL BIAS TRACKER
+AEGIS reads your complete trade history from your Demat account and identifies your personal behavioral patterns. It calculates how many times you panic-sold during dips that later recovered. How many times you bought at peaks out of FOMO. How early you sold your winners. How long you held your losers. It assigns you an Emotional Bias Score and calculates exactly how much each pattern has cost you in rupees. Not a quiz, not a personality test. Your real data. Your real cost. Every time you try to override an AEGIS suggestion, it shows you your history: "You have overridden AEGIS 6 times. It was right 5 of those times. Those 5 decisions cost you ₹12,400." Then it gives you the choice — override anyway, or trust the system.
+
+MODULE 5 — PORTFOLIO X-RAY
+Most investors think they are diversified. Most are not. AEGIS proves it with a correlation analysis — showing how much each stock in your portfolio moves together with every other stock. Owning Infosys, TCS, Wipro, and HCL feels like four different investments. They move together 85–90% of the time because they serve the same clients, depend on the same Dollar/Rupee rate, and are affected by the same macro events. Portfolio X-Ray shows your real sector concentration, hidden correlations, and true diversification score. It then suggests which sectors would actually reduce your risk if added.
+
+---
+
+### MARKET INTELLIGENCE
+
+MODULE 6 — INTELLIGENCE FEED
+A live feed of news and social media signals filtered, scored, and sorted specifically for you. Sources pulled every 60 seconds:
+
+StockTwits — purpose-built financial social network, every post tagged with ticker and sentiment
+Twitter/X — verified CEO accounts, Fed officials, major analysts
+Reddit — WallStreetBets and investing subreddits for retail sentiment
+Telegram — Indian market alert channels, SEBI updates, brokerage research
+NewsAPI and Reuters RSS — structured verified financial news
+YouTube transcripts — major financial channel sentiment
+
+Every item goes through a bot filter, then FinBERT sentiment scoring, then ticker extraction to match against your portfolio, then impact scoring — HIGH, MEDIUM, or LOW. Mistral-7B writes one plain English summary line for each item. The feed is sorted into three tiers:
+
+Tier 1 — News about stocks you own or AEGIS is watching for you. Always first.
+Tier 2 — Market movers. Stocks seeing biggest impact today even if you don't own them.
+Tier 3 — General market news. Macro events, global developments, economy.
+
+Push notifications fire only for Tier 1. Never for general news. No spam.
+
+MODULE 7 — GLOBAL MORNING BRIEF
+Every morning before Indian markets open at 9:15 AM, AEGIS sends a brief showing how global markets closed overnight — US markets, SGX Nifty, crude oil price, gold price, USD/INR exchange rate, and predicted impact on your specific portfolio for the day. Users stop opening five different apps every morning. Everything they need is in one place, personalised to their holdings.
+
+MODULE 8 — FII/DII ACTIVITY TRACKER
+Foreign Institutional Investors hold approximately 20–22% of all NSE-listed stocks. When they collectively sell, Indian markets fall regardless of fundamentals. When they buy, markets rise. Their daily activity is public data published by NSE and BSE every evening — but no retail app presents it connected to your personal holdings. AEGIS shows net FII and DII buying or selling every day, which sectors they moved in and out of, and maps it directly to your portfolio — telling you which of your stocks are in sectors seeing institutional inflows or outflows right now.
+
+MODULE 9 — ECONOMIC CALENDAR
+RBI monetary policy decisions, US Fed meetings, quarterly earnings results, Union Budget, monthly inflation data — these are the events that move markets. Most retail investors miss them or find out after the fact. AEGIS maintains a rolling 30-day calendar of all market-moving events, sends advance alerts for events affecting your specific holdings, and tells you what to expect and why it matters for your portfolio — before it happens.
+
+---
+
+### DECISION TOOLS
+
+MODULE 10 — PERSONAL FINANCE CHATBOT
+A conversational AI assistant with full access to your portfolio, live market data, your trade history, your goals, and the live news feed. Ask it anything in English or Hindi and it answers in the context of your specific financial situation. You can also send a screenshot of anything you don't understand — a confusing chart, a news headline, a financial statement — and the chatbot reads the image and explains it in plain language. Powered by Mistral-7B running locally — your financial data never leaves your device. The chatbot never tells you what to do. It gives you complete information and always ends with "the final decision is yours."
+
+MODULE 11 — STOCK COMPARISON TOOL
+Compare any two stocks side by side — price, PE ratio, one-year return, dividend yield, debt levels, volatility, and analyst consensus. AEGIS gives its own verdict at the bottom. And crucially — it tells you how adding either stock would specifically affect your current portfolio's sector balance and risk profile. Not generic comparison. Personalized comparison.
+
+MODULE 12 — WATCHLIST WITH SMART ALERTS
+Add stocks you're interested in but not ready to buy. Set your target entry price. Write your reason for watching it. AEGIS monitors it and alerts you when the price reaches your target — but also tells you whether the original reason you added it is still valid or whether something has changed in the fundamentals or sentiment around that stock. Most apps alert you when price hits. AEGIS alerts you when price hits AND the thesis is still intact.
+
+MODULE 13 — REAL PROFIT CALCULATOR
+Before you sell any stock, AEGIS shows your actual profit after every deduction — brokerage on both sides, STT (Securities Transaction Tax), GST on brokerage, SEBI charges, stamp duty, and tax. STCG at 20% if held under 12 months, LTCG at 12.5% if held over 12 months. It also tells you — if you wait X more days, you save Y rupees in tax. One feature that prevents thousands of rupees from silently disappearing on every trade.
+
+---
+
+### WEALTH PLANNING
+
+MODULE 14 — GOAL-BASED INVESTING
+Instead of thinking about stocks, users think about their real life goals. Car in 3 years. House in 10 years. Child's education in 15 years. Retirement in 30 years. The user sets the goal and timeline. AEGIS reverse-engineers how much they need to invest every month to reach it. It tracks live progress with a visual progress bar. When markets move, it automatically recalculates and tells the user what changes. This changes the user's relationship with investing entirely — they stop panicking about daily price movements because they can see they are still on track for the thing that actually matters to them.
+
+MODULE 15 — SIP AND MUTUAL FUND TRACKER
+Most Indian investors have both direct stocks and SIPs or mutual funds managed in completely separate apps with no connection between them. AEGIS brings both together into one complete wealth picture. It shows total wealth across both, upcoming SIP dates and amounts, individual fund performance, and sector overlap detection. If your direct stocks are already 50% IT and your SIP is going into an IT-heavy fund, AEGIS flags it.
+
+MODULE 16 — IPO TRACKER
+Every upcoming IPO displayed with a simple AEGIS rating, the Grey Market Premium (informal indicator of expected listing gains), a one-line verdict in plain English, and a specific note on whether the IPO fits your portfolio based on your current sector exposure and risk profile. Direct link to apply through your connected broker.
+
+MODULE 17 — TAX AND P&L SUMMARY
+At any point in the year, AEGIS shows your complete capital gains picture — STCG and LTCG clearly separated, total tax liability calculated, and remaining exemption limit shown. Before March 31st every year, it automatically identifies tax loss harvesting opportunities — stocks where booking a loss would offset your gains and reduce your tax bill. At year end, a complete downloadable tax report is generated — ready to hand to your CA or use for filing directly.
+
+---
+
+## THE TECHNOLOGY BEHIND AEGIS
+
+PPO Reinforcement Learning Agent (PyTorch + Stable-Baselines3)
+An AI agent trained on 20 years of market data using a reward and punishment system. Rewarded for generating advice that leads to good risk-adjusted returns. Punished for advice that leads to unnecessary losses. Like training a chess engine, but for portfolio advisory.
+
+LSTM Neural Network (PyTorch)
+A type of AI specifically designed to understand sequences over time — perfect for stock prices where what happened last week affects what happens today. Looks at 60 days of price data and forecasts short-term price direction.
+
+Hidden Markov Model (hmmlearn)
+Classifies the current market regime — Bull, Bear, or High Volatility — from price movements and volume data. AEGIS adjusts its advisory style based on which regime is detected.
+
+FinBERT (HuggingFace)
+An AI model pre-trained on financial news and analyst reports. Reads every news headline and social post and correctly interprets financial language — outputting a Bullish, Neutral, or Bearish score.
+
+CVaR Engine (NumPy)
+Calculates your portfolio's statistical worst-case loss threshold. Triggers the Recovery Engine only when something truly abnormal happens — not on normal bad days.
+
+Monte Carlo Simulation (SciPy)
+Runs 500 simulated recovery scenarios based on historical precedent. Generates probabilistic recovery timelines — honest probability ranges, not false certainty.
+
+SHAP and Captum
+Explainability tools that look inside the AI models and identify exactly which factor caused a specific outcome. Makes every AI decision fully transparent.
+
+Mistral-7B via Ollama (Local LLM)
+Open-source language model running entirely on your own device. Converts all complex math and data into plain English or Hindi. Your financial data never leaves your device.
+
+Zerodha Kite Connect API
+Read-only connection to your Demat account. AEGIS can see your holdings and history. It can never place orders or move money. Ever.
+
+---
+
+## FULL TECH STACK
+
+Advisory Agent          → PyTorch + Stable-Baselines3 (PPO)
+Price Forecasting       → PyTorch LSTM
+Market Regime           → hmmlearn (3-state HMM)
+Sentiment Analysis      → FinBERT — HuggingFace
+Risk Engine             → NumPy CVaR
+Recovery Simulation     → SciPy Monte Carlo
+Explainability          → SHAP + Captum
+Chatbot LLM             → Mistral-7B via Ollama (local)
+Screenshot Reading      → Gemini Vision API
+Demat Integration       → Zerodha Kite Connect API (read-only)
+Social Data             → StockTwits, Twitter/X, Reddit, Telegram APIs
+News Data               → NewsAPI, Reuters RSS, YouTube Data API
+Market Data             → yfinance + AlphaVantage WebSocket
+Institutional Data      → NSE/BSE public data + FRED API
+Backend                 → FastAPI (Python)
+Frontend                → React + Recharts
+
+---
+
+## HOW AEGIS IS DIFFERENT FROM EVERYTHING ELSE
+
+Zerodha      → Executes trades. Zero advisory or intelligence.
+Moneycontrol → Shows news. Not personalized to your portfolio.
+Screener.in  → Stock research. No connection to your holdings.
+Univest      → Human analyst tips. No explanation, no recovery plan, paid subscription.
+ChatGPT      → General answers. Doesn't know your portfolio or live data.
+AEGIS        → All of the above combined. Personalized. Free.
+
+---
+
+## WHAT AEGIS IS NOT
+
+AEGIS is not a trading bot — it never places trades automatically.
+AEGIS is not a SEBI registered investment advisor — it provides data-driven insights, not regulated financial advice.
+AEGIS is not responsible for trading outcomes — every decision is made by the user.
+AEGIS is not a get-rich-quick system — it is a risk management and decision support platform.
+
+---
+
+## WHO AEGIS IS FOR
+
+The college student investing ₹2,000/month who doesn't know where to start.
+The working professional with ₹5 lakh in stocks who checks Zerodha once a week and hopes for the best.
+The experienced investor who makes good picks but still panic-sells during every market crash.
+Anyone who has ever opened their Zerodha app during a market fall and felt completely alone.
+
+---
+
+## THE BUSINESS MODEL (FUTURE)
+
+AEGIS core is free. Always. Revenue in future:
+
+Premium tier — advanced features like options advisory, detailed tax filing integration, and priority alert speed.
+Broker referral — when new users open a Demat account through AEGIS, the broker pays a referral commission. Zero cost to the user.
+Institutional data — anonymized aggregate market sentiment data sold to institutional clients. Individual user data is never sold. Ever.
+
+---
+
+## KEY NUMBERS TO REMEMBER
+
+170 million+  → Demat accounts in India (2024)
+13 million+   → Zerodha users alone
+5 million     → Univest users (proves market wants this)
+1.5–3%        → Annual underperformance of retail investors due to behavioral mistakes
+20–22%        → FII holdings in NSE-listed stocks
+12%           → Nifty 50 historical annual average return
+7%            → Fixed Deposit return
+20%           → STCG tax rate (held under 12 months)
+12.5%         → LTCG tax rate (held over 12 months)
+₹1,25,000     → LTCG tax exemption limit
+₹0            → Cost of AEGIS to the user
+
+---
+
+## IMPORTANT TERMS EXPLAINED SIMPLY
+
+DEMAT ACCOUNT — Your digital locker where stocks are stored. Like a bank account but for shares. Zerodha, Upstox, Angel One are brokers who give you this.
+
+PORTFOLIO — The collection of all stocks you currently own.
+
+P&L — Profit and Loss. How much money you made or lost on your investments.
+
+NIFTY 50 — Index of the 50 largest companies in India. The average temperature of the Indian stock market.
+
+SENSEX — Same concept as Nifty but tracks 30 companies on BSE (Bombay Stock Exchange).
+
+BULL MARKET — Market is going up. Investors are confident.
+
+BEAR MARKET — Market is going down. Investors are fearful.
+
+VOLATILITY — How wildly prices are swinging. High volatility means prices jumping dramatically.
+
+PE RATIO — How expensive a stock is relative to its profits. PE of 10 means you pay ₹10 for every ₹1 the company earns. Lower PE generally means better value.
+
+DIVIDEND — When a company shares profits with shareholders. If you own 100 shares and company declares ₹19 dividend — you get ₹1,900 in your account.
+
+IPO (Initial Public Offering) — When a private company sells shares to the public for the first time.
+
+SIP (Systematic Investment Plan) — Investing a fixed amount every month automatically.
+
+MUTUAL FUND — Pool of money from many investors, managed by a professional who invests across many stocks.
+
+DIVERSIFICATION — Not putting all eggs in one basket. Owning stocks from different sectors.
+
+STOP LOSS — A pre-decided price at which you sell a stock to prevent further loss.
+
+DRAWDOWN — How much your portfolio fell from its highest point.
+
+CVaR (Conditional Value at Risk) — AEGIS's trigger mechanism. Looks at your portfolio's worst historical days and calculates your statistical worst-case loss threshold. If today's loss crosses that threshold — Recovery Engine activates.
+
+SHARPE RATIO — Measures return per unit of risk. High Sharpe means good returns with low risk.
+
+HEDGING — Taking a position that protects you if your main investment falls. Like buying gold ETF when worried about stocks falling.
+
+FII (Foreign Institutional Investors) — Big foreign funds like American hedge funds and Middle Eastern sovereign wealth funds. They hold 20–22% of all Indian stocks. When they sell — markets fall. When they buy — markets rise.
+
+DII (Domestic Institutional Investors) — Big Indian funds like LIC and SBI Mutual Fund. They counterbalance FIIs.
+
+SGX NIFTY — Nifty 50 futures traded in Singapore overnight. Best predictor of how Indian markets will open at 9:15 AM.
+
+SEBI — India's stock market regulator. Like RBI is for banks, SEBI is for stock markets.
+
+REINFORCEMENT LEARNING — AI that learns by trial and error. Rewarded for good decisions, punished for bad ones. Trained on 20 years of market data.
+
+LSTM — AI with built-in memory. Looks at 60 days of price data and predicts where price is heading next.
+
+FINBERT — AI model trained specifically on financial news. Correctly interprets financial language and outputs Bullish/Neutral/Bearish score.
+
+SHAP — Detective tool for AI. When portfolio drops, SHAP assigns blame percentages to each factor — showing exactly what caused the loss.
+
+MONTE CARLO SIMULATION — Instead of predicting one future, runs 500 simulated futures based on historical precedent. Like a weather forecast — gives probability, not false certainty.
+
+HIDDEN MARKOV MODEL — Classifies the current market mood — Bull, Bear, or High Volatility. AEGIS adjusts advice based on which mood is detected.
+
+MISTRAL-7B — Open-source language model that runs locally on your device. Converts complex math into plain English or Hindi. Your data never leaves your device.
+
+KELLY CRITERION — Mathematical formula for how much money to put into each trade. Prevents over-betting and under-betting.
+
+RSI (Relative Strength Index) — Number from 0-100 showing if a stock is overbought (above 70) or oversold (below 30).
+
+GREY MARKET PREMIUM (GMP) — Before an IPO officially lists, shares trade informally. The premium shows expected listing gains.
+
+STCG — Short Term Capital Gains. Profit from selling a stock held under 12 months. Tax rate: 20%.
+
+LTCG — Long Term Capital Gains. Profit from selling a stock held over 12 months. Tax rate: 12.5% above ₹1,25,000.
+
+TAX LOSS HARVESTING — Selling a losing stock before March 31st so the loss cancels out your gains and reduces your tax bill. AEGIS identifies these automatically.
+
+STT (Securities Transaction Tax) — Small government tax on every stock trade. 0.1% on sell side.
+
+DISPOSITION EFFECT — Human tendency to sell winning stocks too early and hold losing stocks too long. One of the most costly behavioral biases. AEGIS detects this in your real trade history.
+
+CANDLESTICK CHART — Most common stock chart. Green candle means price went up that day. Red candle means price went down.
+
+---
+
+## TOUGH JUDGE QUESTIONS AND ANSWERS
+
+Q: What if AEGIS gives wrong advice and someone loses money?
+A: AEGIS never gives advice — it gives information and suggestions with clearly stated reasoning. Every output carries a disclaimer. Final decision is always the user's. Same as how Bloomberg Terminal works — data and analysis, not instructions.
+
+Q: How is this different from ChatGPT?
+A: ChatGPT doesn't know your portfolio, buying price, tax situation, or live market data. It gives generic advice to generic people. AEGIS knows everything about your specific financial situation. The difference is Google Maps versus asking a stranger for directions.
+
+Q: Is this SEBI compliant?
+A: AEGIS is a data analytics and information platform, not a SEBI-registered investment advisor. Similar to how Screener.in or Tickertape provide financial data. Every output carries a disclaimer that it is for informational purposes only.
+
+Q: What about data privacy?
+A: AEGIS uses read-only API access — we can never place orders or move money. All data is encrypted. We never sell user data. Users can disconnect Demat anytime and all data is deleted immediately.
+
+Q: Everyone using the same AI — won't they all get the same signals?
+A: No. Every user's output is personalised based on their specific holdings, buying prices, risk tolerance, and goals. A student with ₹50,000 and a retiree with ₹50,00,000 get completely different signals from the same market event.
+
+Q: Univest already exists. Why would anyone switch?
+A: Univest is a human analyst tip service behind a ₹99/month paywall with zero recovery plan when things go wrong. AEGIS is free, AI-powered, and built around the feature Univest completely ignores — explaining losses mathematically and providing a recovery path. Univest's 5 million users prove our market exists. Our job is to serve them better.
+
+Q: Will everyone be profitable using AEGIS?
+A: No — and we are honest about that. Markets are not guaranteed. AEGIS does not promise returns. It promises the elimination of self-inflicted losses caused by panic and poor decisions — which for most retail investors is worth more than any stock tip.
+
+---
+
+## THE ONE CLOSING LINE
+
+"170 million Indians now have Demat accounts. Most are losing money — not to bad markets, but to panic, misinformation, and the complete absence of a system. Hedge funds have quant analysts, risk engines, and recovery strategies. Retail investors have WhatsApp tips. AEGIS closes that gap — free, transparent, and always putting the final decision exactly where it belongs — with the investor."
